@@ -1,0 +1,15 @@
+{
+    "username": "lasha",
+    "password": "jojua",
+    "age": 25,
+    "isSingle": true,
+    "isGoodBoy": null,
+    "friends": {
+        "hasFriends":true,
+        "girl": 25,
+        "boy": null
+    },
+    "jobs": ["post", "croco"]
+    
+
+}
