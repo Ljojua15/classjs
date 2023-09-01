@@ -69,9 +69,23 @@
 
 // console.log(user);
 
-import car, { user as mamuka, userName, UserFirst } from "./module.js";
+// import car, { user as mamuka, userName, UserFirst } from "./module.js";
 
-const clasi = new UserFirst(`messi`, `ronaldo`);
+// const clasi = new UserFirst(`messi`, `ronaldo`);
 
-userName("mamukaboro");
-console.log(mamuka, car, clasi);
+// userName("mamukaboro");
+// console.log(mamuka, car, clasi);
+
+// 27
+
+const user = {
+  name: `lasha`,
+  lastName: `jojua`,
+  age: 25,
+  city: undefined,
+  kom: null,
+};
+
+const { kom } = user;
+
+console.log(kom);
