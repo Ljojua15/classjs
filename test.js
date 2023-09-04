@@ -8,6 +8,8 @@
 // const myCar = new Car("subaru", "forester", "white");
 // const mamCar = new Car("nissan", "tidda", "schwarz");
 
+const { Callbacks } = require("cypress/types/jquery");
+
 // console.log(myCar);
 // console.log(mamCar.color);
 
@@ -78,14 +80,33 @@
 
 // 27
 
-const user = {
-  name: `lasha`,
-  lastName: `jojua`,
-  age: 25,
-  city: undefined,
-  kom: null,
+// const user = {
+//   name: `lasha`,
+//   lastName: `jojua`,
+//   age: undefined,
+//   city: undefined,
+//   kom: null,
+// };
+
+// const { age = 30 } = user;
+
+// console.log(age);
+
+// -----------call back----------\\
+
+// const a = () => {
+//   console.log(2 + 10);
+// };
+
+const c = (Callback) => {
+  setTimeout(() => {
+    console.log("5");
+    Callback();
+  }, 5000);
 };
 
-const { kom } = user;
+const b = () => {
+  console.log(250 - 15);
+};
 
-console.log(kom);
+c(b);
