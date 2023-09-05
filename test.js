@@ -8,8 +8,6 @@
 // const myCar = new Car("subaru", "forester", "white");
 // const mamCar = new Car("nissan", "tidda", "schwarz");
 
-const { Callbacks } = require("cypress/types/jquery");
-
 // console.log(myCar);
 // console.log(mamCar.color);
 
@@ -98,15 +96,27 @@ const { Callbacks } = require("cypress/types/jquery");
 //   console.log(2 + 10);
 // };
 
-const c = (Callback) => {
-  setTimeout(() => {
-    console.log("5");
-    Callback();
-  }, 5000);
-};
+// const c = (Callback) => {
+//   setTimeout(() => {
+//     console.log("5");
+//     Callback();
+//   }, 5000);
+// };
 
-const b = () => {
-  console.log(250 - 15);
-};
+// const b = () => {
+//   console.log(250 - 15);
+// };
 
-c(b);
+// c(b);
+
+// let bikes = [`suzi`, `bmw`, `merc`, `niva`];
+
+// bikes.splice(2, 1, `lasha`);
+
+// console.log(bikes);
+
+let bikes = [`suzi`, `bmw`, `merc`, `niva`];
+
+let iii = bikes.slice(1, 2);
+
+console.log(iii);
