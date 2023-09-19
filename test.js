@@ -120,3 +120,35 @@
 // let iii = bikes.slice(1, 2);
 
 // console.log(iii);
+
+// const numbers = [
+//   1, 2, 3, 4, 5, 20, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99,
+// ];
+
+// const result = numbers.filter((number) => {
+//   return number <= 20;
+// });
+
+// console.log(result);
+
+const users = [
+  {
+    name: "a",
+    age: "b",
+  },
+  {
+    name: "m",
+    age: "c",
+  },
+  {
+    name: "k",
+    age: "b",
+  },
+  {
+    name: "e",
+    age: "c",
+  },
+];
+
+const b = users.filter((b) => b.age == "c");
+console.log(b);
