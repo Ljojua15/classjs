@@ -131,24 +131,100 @@
 
 // console.log(result);
 
-const users = [
-  {
-    name: "a",
-    age: "b",
-  },
-  {
-    name: "m",
-    age: "c",
-  },
-  {
-    name: "k",
-    age: "b",
-  },
-  {
-    name: "e",
-    age: "c",
-  },
-];
+// const users = [
+//   {
+//     name: "a",
+//     age: "b",
+//   },
+//   {
+//     name: "m",
+//     age: "c",
+//   },
+//   {
+//     name: "k",
+//     age: "b",
+//   },
+//   {
+//     name: "e",
+//     age: "c",
+//   },
+// ];
 
-const b = users.filter((b) => b.age == "c");
-console.log(b);
+// const b = users.filter((b) => b.age == "c");
+// console.log(b);
+
+// const products = [
+//   { name: "Laptop", price: 1000 },
+//   { name: "Phone", price: 800 },
+//   { name: "Tablet", price: 500 },
+//   { name: "Monitor", price: 500 },
+// ];
+
+// const filterAffordableProducts = products.filter((b) => b.price == 500);
+
+// console.log(filterAffordableProducts);
+
+// const number = [15, 25, 30, 47, 50, 62];
+
+// const filterEvenNumbers = number.filter((b) => {
+//   return b > 30;
+// });
+
+// console.log(filterEvenNumbers);
+
+// function filterEvenNumbers(arr) {
+//   return arr.filter(function (number) {
+//     return number / 2 !== 0;
+//   });
+// }
+
+// const number = [15, 25, 30, 47, 50, 62];
+
+// const evenNumbers = filterEvenNumbers(number);
+
+// // console.log(number);
+// console.log(evenNumbers);
+
+// console.log(number);
+
+// const testtest = (number) => {
+//   return number.forEach((x) => {
+//     return x / 2;
+//   });
+// };
+// const answer = testtest(number);
+
+// console.log("hiii", answer);
+
+// const numbers = [15, 25, 30, 47, 50, 62];
+// const divisor = 2;
+
+// numbers.forEach(function (element, index) {
+//   numbers[index] = element / divisor;
+// });
+
+// console.log("Array after division:", numbers);
+
+// // const uH = numbers.map(function (croco) {
+// //   return croco / 4;
+// // });
+
+// // console.log(uH);
+
+// console.log(numbers);
+
+// const cC = [20, 25, 30, 35, 40];
+
+// const fF = cC.map(function (translate) {
+//   return (translate * 9) / 5 + 32;
+// });
+
+// console.log(fF);
+
+const summ = [10, 15, 20, 25, 30];
+let sum = 0;
+summ.forEach(function (element) {
+  sum = element + sum;
+});
+
+console.log(sum);
