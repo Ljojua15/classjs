@@ -115,8 +115,8 @@
 
 // console.log(bikes);
 
-let bikes = [`suzi`, `bmw`, `merc`, `niva`];
+// let bikes = [`suzi`, `bmw`, `merc`, `niva`];
 
-let iii = bikes.slice(1, 2);
+// let iii = bikes.slice(1, 2);
 
-console.log(iii);
+// console.log(iii);
