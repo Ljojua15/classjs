@@ -221,10 +221,45 @@
 
 // console.log(fF);
 
-const summ = [10, 15, 20, 25, 30];
-let sum = 0;
-summ.forEach(function (element) {
-  sum = element + sum;
-});
+// const summ = [10, 15, 20, 25, 30];
+// let sum = 0;
+// summ.forEach(function (element) {
+//   sum = element + sum;
+// });
 
-console.log(sum);
+// console.log(sum);
+
+////პრომისები
+
+// let promise = new Promise((x, y) => {
+//   setTimeout(() => {
+//     if (2 > 3) {
+//       x("kai");
+//       return;
+//     }
+//     y("ara");
+//   }, 5000);
+// });
+
+// promise.then((z) => console.log(z)).catch((u) => console.log(u));
+
+function generateNumber() {
+  return new Promise((tanxmoba, uaryofa) => {
+    setTimeout(() => {
+      const randomNummer = Math.floor(Math.random() * 20) + 1;
+      tanxmoba(randomNummer);
+    }, 1000);
+  });
+}
+
+function nomrisGamodzaxeba() {
+  generateNumber()
+    .then((randomNummer) => {
+      console.log("random nomeri:", randomNummer);
+    })
+    .catch((shecdoma) => {
+      console.log("shecdoma:", shecdoma);
+    });
+}
+
+nomrisGamodzaxeba();
