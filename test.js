@@ -243,23 +243,70 @@
 
 // promise.then((z) => console.log(z)).catch((u) => console.log(u));
 
-function generateNumber() {
-  return new Promise((tanxmoba, uaryofa) => {
-    setTimeout(() => {
-      const randomNummer = Math.floor(Math.random() * 20) + 1;
-      tanxmoba(randomNummer);
-    }, 1000);
-  });
-}
+// function generateNumber() {
+//   return new Promise((tanxmoba, uaryofa) => {
+//     let x = 2;
+//     setTimeout(() => {
+//       const randomNummer = x + Math.floor(Math.random() * 20) + 1;
+//       tanxmoba(randomNummer);
+//     }, 1000);
+//   });
+// }
 
-function nomrisGamodzaxeba() {
-  generateNumber()
-    .then((randomNummer) => {
-      console.log("random nomeri:", randomNummer);
-    })
-    .catch((shecdoma) => {
-      console.log("shecdoma:", shecdoma);
-    });
-}
+// function nomrisGamodzaxeba() {
+//   generateNumber()
+//     .then((randomNummer) => {
+//       console.log("random nomeri:", randomNummer);
+//     })
+//     .catch((shecdoma) => {
+//       console.log("shecdoma:", shecdoma);
+//     });
+// }
 
-nomrisGamodzaxeba();
+// nomrisGamodzaxeba();
+
+let fruits = new Promise((resolve, reject) => {
+  const newFruit = ["apple", "banana", "cherry"];
+  const colors = ["red", "green", "blue", "yellow", "purple"];
+
+  if (false) {
+    resolve(newFruit);
+    return;
+  }
+  reject(colors);
+});
+
+const printFruCol = async () => {
+  try {
+    const res = await fruits;
+    console.log(res);
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+printFruCol();
+
+// const fruitsPromise = new Promise((resolve, reject) => {
+//   const newFruit = ["apple", "banana", "cherry"];
+
+//   // Simulating an error condition
+//   const isError = false; // Set to true to simulate a rejection
+
+//   if (isError) {
+//     resolve(newFruit);
+//   } else {
+//     reject("Error: Failed to fetch fruits");
+//   }
+// });
+
+// const printFruCol = async () => {
+//   try {
+//     const res = await fruitsPromise;
+//     console.log("Fruits:", res);
+//   } catch (error) {
+//     console.error("Error:", error);
+//   }
+// };
+
+// printFruCol();
